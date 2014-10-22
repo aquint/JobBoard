@@ -35,6 +35,8 @@ gem 'will_paginate',           '3.0.7'
 
 gem 'bootstrap-will_paginate', '0.0.10'
 
+gem 'taps'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
