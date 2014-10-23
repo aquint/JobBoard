@@ -9,12 +9,12 @@ class Post < ActiveRecord::Base
 
   	def self.search(query)
   	  
-	  if query
-	  	query = "%" + query.downcase + "%"
-        find(:all, :conditions => ['LOWER(title) LIKE ? OR LOWER(body) LIKE ?', query, query] )
-        #where("LOWER(title) = ? OR LOWER(body) = ?", query, query)
-	  else
-	    find(:all)
-	  end
-	end
+  	  if query
+  	  	query = "%" + query.downcase + "%"
+          find(:all, :conditions => ['LOWER(title) LIKE ? OR LOWER(body) LIKE ?', query, query] )
+          #where("LOWER(title) = ? OR LOWER(body) = ?", query, query)
+  	  else
+  	      find(:all)
+  	  end
+  	end
 end
