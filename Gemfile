@@ -36,6 +36,7 @@ gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 
 gem 'taps'
+gem 'font-awesome-sass', '~> 4.2.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -46,7 +47,7 @@ group :production, :staging do
 	gem 'rails_12factor'
 end
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'
